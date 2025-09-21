@@ -214,19 +214,12 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    /* 디지털 교육 플랫폼 테마 - 제공된 이미지 스타일 */
-    background: linear-gradient(135deg,
-        #1e3a5f 0%,
-        #2a5298 20%,
-        #3d6cb9 40%,
-        #4a7ba7 60%,
-        #00acc1 80%,
-        #00bcd4 100%);
+    /* 디지털 교육 플랫폼 배경 이미지 */
+    background-image: url('images/education-hero.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    position: relative;
 }
 
 .hero-bg::before {
@@ -236,12 +229,9 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background:
-        radial-gradient(circle at 25% 45%, rgba(0, 229, 255, 0.2) 0%, transparent 40%),
-        radial-gradient(circle at 75% 55%, rgba(0, 188, 212, 0.15) 0%, transparent 40%),
-        radial-gradient(circle at 50% 20%, rgba(100, 181, 246, 0.1) 0%, transparent 50%);
-    opacity: 0.8;
-    mix-blend-mode: screen;
+    /* 이미지를 약간 어둡게 하여 텍스트 가독성 향상 */
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
 
 .hero-bg::after {
@@ -251,12 +241,14 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
+    /* 상단과 하단에 그라데이션 효과 */
     background: linear-gradient(
         to bottom,
-        rgba(30, 60, 114, 0.2) 0%,
-        transparent 40%,
-        rgba(0, 0, 0, 0.3) 100%
+        transparent 0%,
+        transparent 60%,
+        rgba(0, 0, 0, 0.4) 100%
     );
+    z-index: 1;
 }
 
 .hero-content {
