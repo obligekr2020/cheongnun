@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>서울특별시교육청교육정책포럼</title>
+    <meta name="description" content="연구하며 성장하는 학교자율운영 지원">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <img src="https://via.placeholder.com/200x60/4a90e2/ffffff?text=서울특별시교육청교육정책포럼" alt="서울특별시교육청교육정책포럼">
+                </div>
+
+                <!-- Navigation -->
+                <nav class="nav" id="nav">
+                    <ul class="nav-list">
+                        <li><a href="#courses">교육과정</a></li>
+                        <li><a href="#faculty">교수진</a></li>
+                        <li><a href="#about">연구소 소개</a></li>
+                        <li><a href="#cyber">사이버교육</a></li>
+                        <li><a href="#support">교수지원</a></li>
+                        <li><a href="#vision">우리의 비전</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Header Actions -->
+                <div class="header-actions">
+                    <button class="search-btn" id="searchBtn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button class="menu-toggle" id="menuToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Search Modal -->
+    <div class="search-modal" id="searchModal">
+        <div class="search-modal-content">
+            <button class="close-search" id="closeSearch">&times;</button>
+            <form class="search-form">
+                <input type="text" placeholder="검색어를 입력하세요..." class="search-input">
+                <button type="submit" class="search-submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-slider">
+            <div class="hero-slide active">
+                <div class="hero-bg"></div>
+                <div class="hero-content">
+                    <div class="container">
+                        <h1 class="hero-title">연구하며 성장하는<br>학교자율운영 지원</h1>
+                        <button class="hero-btn">자세히 보기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hero Navigation -->
+        <button class="hero-nav hero-prev" id="heroPrev">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="hero-nav hero-next" id="heroNext">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+    </section>
+
+    <!-- Quick Menu Section -->
+    <section class="quick-menu">
+        <div class="container">
+            <div class="quick-menu-grid">
+                <div class="quick-menu-item">
+                    <div class="quick-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>교육과정운영</h3>
+                </div>
+                <div class="quick-menu-item">
+                    <div class="quick-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>전문학습공동체</h3>
+                </div>
+                <div class="quick-menu-item">
+                    <div class="quick-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>교육과정연구회 지원</h3>
+                </div>
+                <div class="quick-menu-item">
+                    <div class="quick-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>학생성장중심 평가</h3>
+                </div>
+                <div class="quick-menu-item">
+                    <div class="quick-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>연구학교</h3>
+                </div>
+                <div class="quick-menu-item">
+                    <div class="quick-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>정책연구</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Section -->
+    <main class="main-content">
+        <div class="container">
+            <!-- News Section -->
+            <section class="news-section">
+                <h2 class="section-title">새로운 소식</h2>
+
+                <!-- News Filter Tabs -->
+                <div class="news-tabs">
+                    <button class="tab-btn active" data-tab="all">전체보기</button>
+                    <button class="tab-btn" data-tab="notice">공지사항</button>
+                    <button class="tab-btn" data-tab="education">교육과정</button>
+                    <button class="tab-btn" data-tab="research">연구활동</button>
+                    <button class="tab-btn" data-tab="seminar">세미나</button>
+                </div>
+
+                <!-- News Carousel -->
+                <div class="news-carousel">
+                    <div class="news-slider" id="newsSlider">
+                        <div class="news-card">
+                            <div class="news-date">2024.09.21</div>
+                            <h3 class="news-title">OECD교육 2030 중등학교 교육과정 개정방향을 탐색하다</h3>
+                            <p class="news-desc">2022 개정 교육과정에서 추구하는 인재상과 핵심역량을 실현하기 위한 중등학교 교육과정 운영 방안을 모색합니다.</p>
+                        </div>
+                        <div class="news-card">
+                            <div class="news-date">2024.09.19</div>
+                            <h3 class="news-title">글로벌 교육협력 OECD Global Teaching INsights 2024 출간</h3>
+                            <p class="news-desc">국제적 교육 동향과 혁신적 교수법에 대한 최신 연구 결과를 공유합니다.</p>
+                        </div>
+                        <div class="news-card">
+                            <div class="news-date">2024.09.18</div>
+                            <h3 class="news-title">글로벌 교육협력 Global Teaching INsights 2024 출간</h3>
+                            <p class="news-desc">세계 각국의 교육정책과 실천 사례를 분석한 연구보고서를 발간하였습니다.</p>
+                        </div>
+                        <div class="news-card">
+                            <div class="news-date">2024.09.17</div>
+                            <h3 class="news-title">2024 우수연구기관 평가 및 우수연구자 선정 결과 발표</h3>
+                            <p class="news-desc">교육정책 연구 분야에서 탁월한 성과를 거둔 연구기관과 연구자를 선정하였습니다.</p>
+                        </div>
+                    </div>
+
+                    <!-- Carousel Navigation -->
+                    <button class="carousel-nav carousel-prev" id="newsPrev">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-nav carousel-next" id="newsNext">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Video and Announcements Section -->
+            <div class="content-grid">
+                <!-- Video Section -->
+                <section class="video-section">
+                    <h2 class="section-title">홍보영상</h2>
+                    <div class="video-container">
+                        <div class="video-wrapper">
+                            <iframe
+                                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                                title="서울특별시교육청교육정책포럼 홍보영상"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div class="video-info">
+                            <p>서울특별시교육청교육정책포럼의 주요 활동과 비전을 소개하는 홍보영상입니다.</p>
+                            <a href="#" class="video-link">YouTube에서 보기</a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Announcements Section -->
+                <section class="announcements-section">
+                    <h2 class="section-title">공지사항</h2>
+                    <div class="announcement-list">
+                        <div class="announcement-item">
+                            <div class="announcement-category">신청</div>
+                            <h3>서울특별시교육청교육정책포럼</h3>
+                            <p>교육정책 연구 및 포럼 참여 신청을 받고 있습니다.</p>
+                            <span class="announcement-date">서울특별시교육청교육정책포럼<br>TEL 02-1234-5678</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Partners Section -->
+    <section class="partners">
+        <div class="container">
+            <div class="partners-grid">
+                <div class="partner-logo">
+                    <img src="https://via.placeholder.com/120x60/cccccc/666666?text=Partner1" alt="Partner 1">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://via.placeholder.com/120x60/cccccc/666666?text=Partner2" alt="Partner 2">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://via.placeholder.com/120x60/cccccc/666666?text=Partner3" alt="Partner 3">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://via.placeholder.com/120x60/cccccc/666666?text=Partner4" alt="Partner 4">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <img src="https://via.placeholder.com/150x50/ffffff/4a90e2?text=서울특별시교육청교육정책포럼" alt="서울특별시교육청교육정책포럼">
+                    </div>
+                    <div class="footer-address">
+                        <p>서울특별시 중구 새문안로 5길 16 (정동, 교육시설물관리사무소) 4층</p>
+                        <p>TEL: 02-1234-5678 | FAX: 02-1234-5679</p>
+                        <p>이메일: info@serii.re.kr</p>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="#sitemap">사이트맵</a></li>
+                        <li><a href="#privacy">개인정보처리방침</a></li>
+                        <li><a href="#terms">이용약관</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 서울특별시교육청교육정책포럼. All Rights Reserved.</p>
+                <div class="footer-badges">
+                    <img src="https://via.placeholder.com/80x30/cccccc/666666?text=Badge1" alt="인증배지">
+                    <img src="https://via.placeholder.com/80x30/cccccc/666666?text=Badge2" alt="인증배지">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
