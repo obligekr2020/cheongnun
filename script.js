@@ -424,8 +424,39 @@ document.addEventListener('DOMContentLoaded', function() {
     initTooltips();
 
     // Console log for debugging
-    console.log('Seoul Education Policy Forum website initialized successfully!');
+    console.log('Seoul Education Research Information Institute website initialized successfully!');
 });
+
+// FAQ Toggle Function
+function toggleFaq(button) {
+    const faqAnswer = button.nextElementSibling;
+    const faqIcon = button.querySelector('.faq-icon');
+    const isOpen = button.classList.contains('active');
+
+    // Close all other FAQ items
+    document.querySelectorAll('.faq-question').forEach(q => {
+        if (q !== button) {
+            q.classList.remove('active');
+            q.nextElementSibling.classList.remove('open');
+            const icon = q.querySelector('.faq-icon');
+            icon.src = 'images/plus_icon.png';
+            icon.alt = '펼치기';
+        }
+    });
+
+    // Toggle current FAQ item
+    if (isOpen) {
+        button.classList.remove('active');
+        faqAnswer.classList.remove('open');
+        faqIcon.src = 'images/plus_icon.png';
+        faqIcon.alt = '펼치기';
+    } else {
+        button.classList.add('active');
+        faqAnswer.classList.add('open');
+        faqIcon.src = 'images/minus_icon.png';
+        faqIcon.alt = '접기';
+    }
+}
 
 // External API integrations (placeholder functions)
 function loadNewsData() {

@@ -51,7 +51,9 @@
     <!-- Search Modal -->
     <div class="search-modal" id="searchModal">
         <div class="search-modal-content">
-            <button class="close-search" id="closeSearch">&times;</button>
+            <button class="close-search" id="closeSearch">
+                <img src="images/btn_close.png" alt="닫기">
+            </button>
             <form class="search-form">
                 <input type="text" placeholder="검색어를 입력하세요..." class="search-input">
                 <button type="submit" class="search-submit">
@@ -124,6 +126,12 @@
                     </div>
                     <h3>정책연구</h3>
                 </div>
+                <div class="quick-menu-item">
+                    <div class="quick-icon">
+                        <img src="images/ico_mainQuick08.png" alt="교육정보">
+                    </div>
+                    <h3>교육정보</h3>
+                </div>
             </div>
         </div>
     </section>
@@ -195,8 +203,11 @@
                             </iframe>
                         </div>
                         <div class="video-info">
-                            <p>서울특별시교육청교육정책포럼의 주요 활동과 비전을 소개하는 홍보영상입니다.</p>
-                            <a href="#" class="video-link">YouTube에서 보기</a>
+                            <p>서울특별시교육청교육연구정보원의 주요 활동과 비전을 소개하는 홍보영상입니다.</p>
+                            <a href="#" class="video-link">
+                                <img src="images/youtube.png" alt="YouTube">
+                                YouTube에서 보기
+                            </a>
                         </div>
                     </div>
                 </section>
@@ -207,9 +218,32 @@
                     <div class="announcement-list">
                         <div class="announcement-item">
                             <div class="announcement-category">신청</div>
-                            <h3>서울특별시교육청교육정책포럼</h3>
+                            <h3>서울특별시교육청교육연구정보원</h3>
                             <p>교육정책 연구 및 포럼 참여 신청을 받고 있습니다.</p>
-                            <span class="announcement-date">서울특별시교육청교육정책포럼<br>TEL 02-1234-5678</span>
+                            <span class="announcement-date">서울특별시교육청교육연구정보원<br>TEL 02-1234-5678</span>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Section -->
+                    <div class="faq-section">
+                        <h3>자주 묻는 질문</h3>
+                        <div class="faq-item">
+                            <button class="faq-question" onclick="toggleFaq(this)">
+                                <span>교육연구정보원의 주요 역할은 무엇인가요?</span>
+                                <img src="images/plus_icon.png" alt="펼치기" class="faq-icon">
+                            </button>
+                            <div class="faq-answer">
+                                <p>서울특별시교육청교육연구정보원은 교육정책 연구, 교육과정 개발, 교원 연수 등을 담당하는 기관입니다.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question" onclick="toggleFaq(this)">
+                                <span>연구 결과는 어떻게 활용되나요?</span>
+                                <img src="images/plus_icon.png" alt="펼치기" class="faq-icon">
+                            </button>
+                            <div class="faq-answer">
+                                <p>연구 결과는 서울시 교육정책 수립, 학교 현장 지원, 교육 프로그램 개선 등에 활용됩니다.</p>
+                            </div>
                         </div>
                     </div>
                 </section>
