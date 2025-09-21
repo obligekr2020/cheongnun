@@ -1035,6 +1035,32 @@ body {
     }
 }
 
+/* Extra small devices (phones, 480px and down) */
+@media (max-width: 480px) {
+    .quick-menu-grid {
+        grid-template-columns: repeat(4, 1fr) !important;
+        grid-template-rows: repeat(2, 1fr) !important;
+        gap: 4px !important;
+    }
+
+    .quick-menu-item {
+        padding: 8px 2px !important;
+        min-height: 70px !important;
+        aspect-ratio: 1 / 1 !important;
+    }
+
+    .quick-icon {
+        width: 28px !important;
+        height: 28px !important;
+    }
+
+    .quick-text {
+        font-size: 8px !important;
+        margin-top: 3px !important;
+        line-height: 1.1 !important;
+    }
+}
+
 /* Animations */
 @keyframes fadeInUp {
     from {
